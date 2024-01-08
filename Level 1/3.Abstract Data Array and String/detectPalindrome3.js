@@ -7,7 +7,7 @@ function detectPalindrome(num) {
   while (num !== 0) {
     let rem = num % 10;
     reverse = reverse * 10 + rem;
-    num = Math.floor(1221);
+    num = Math.floor(num / 10);
   }
   if (temp == reverse) {
     console.log("Yes");
