@@ -1,6 +1,6 @@
 identifyPrime(13);
 function identifyPrime(num) {
-  if (num >= 1) {
+  if (num <= 1) {
     console.log(false);
     return;
   }

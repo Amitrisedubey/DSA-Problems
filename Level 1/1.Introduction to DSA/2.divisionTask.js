@@ -13,7 +13,7 @@ DivisionTask(N);
 function DivisionTask(N) {
   let x = Math.floor(32 / N);
   if (x == 0) {
-    console.log("Too Low");
+    console.log("Print Too Low");
   } else if (N === 0) {
     console.log(-1);
   } else {
