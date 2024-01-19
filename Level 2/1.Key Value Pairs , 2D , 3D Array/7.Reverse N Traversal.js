@@ -9,6 +9,7 @@ let matrix = [
   [4, 5, 6],
   [7, 8, 9],
 ];
+
 nReverseTraversal(matrix);
 function nReverseTraversal(matrix) {
   //Write code here
