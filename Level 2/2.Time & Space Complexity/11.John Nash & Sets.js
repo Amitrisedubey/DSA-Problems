@@ -14,14 +14,15 @@ output = 12345
 let set1 = [1, 2, 3, 4];
 let set2 = [1, 5, 4, 4, 2];
 console.log(joshNashAndSets(set1, set2));
+let se1 = [3, 4, 1, 2];
+let se2 = [1, 5, 4, 4, 2];
+console.log(joshNashAndSets(se1, se2));
 function joshNashAndSets(set1, set2) {
   //Write code here
   // Merge the sets and remove duplicates
   let mergedSet = mergeAndRemoveDuplicates(set1, set2);
-
   // Sort the merged set in ascending order
   bubbleSort(mergedSet);
-
   return mergedSet;
 }
 function mergeAndRemoveDuplicates(set1, set2) {

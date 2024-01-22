@@ -18,6 +18,29 @@ let matrix = [
 ];
 let row = 4;
 let col = 5;
+console.log(detectiveL(matrix, row, col));
 function detectiveL(matrix, row, col) {
   //Write code here
+  console.log(col);
+  let top = 0;
+  let bottom = row - 1;
+  let left = 0;
+  let right = col - 1;
+  let res = "";
+  let count = 0;
+  while (count < row * col) {
+    for (let i = top; i <= bottom; i++) {
+      res += matrix[i][left] + " ";
+      count++;
+    }
+    left++;
+    if (count >= row * col) break;
+    for (let i = left; i <= right; i++) {
+      res += matrix[bottom][i] + " ";
+      count++;
+    }
+    bottom--;
+  }
+  console.log(count);
+  return res;
 }
