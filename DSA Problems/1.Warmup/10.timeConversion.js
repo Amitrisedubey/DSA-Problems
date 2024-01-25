@@ -16,10 +16,10 @@ function timeConversion(S) {
   if (lastTwo === "PM") {
     if (time[0] !== "12") {
       time[0] = parseInt(time[0]) + 12;
-    } else {
-      if (time[0] === "12") {
-        time[0] = "00";
-      }
+    }
+  } else {
+    if (time[0] === "12") {
+      time[0] = "00";
     }
   }
   console.log(time.join(":"));
