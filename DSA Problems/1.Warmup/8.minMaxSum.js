@@ -23,7 +23,7 @@ function minmaxSum(arr) {
     }
     sum += arr[i];
   }
-  let maxSum = sum - max;
-  let minSum = sum - min;
-  console.log(maxSum + " " + minSum);
+  let minSum = sum - max;
+  let maxSum = sum - min;
+  console.log(minSum + " " + maxSum);
 }
