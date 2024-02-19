@@ -1,6 +1,6 @@
 /*
 You are given an two Arrays A and B each of size N 
-the first array is sorted in ascending order hwile the second is sorted 
+the first array is sorted in ascending order while the second is sorted 
 in decreasing order 
 you have to find the numbers of elements common in both the arrays 
 try to solve this without using any extra spaces.
