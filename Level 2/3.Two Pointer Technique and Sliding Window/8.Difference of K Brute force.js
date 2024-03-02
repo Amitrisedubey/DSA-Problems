@@ -17,5 +17,16 @@ let array2 = [1, 2, 3, 4, 5];
 console.log(differnceOfK(array2, k2, size2));
 function differnceOfK(arr, k, size) {
   //Write code here
-  return [arr, k, size];
+  for (let i = 0; i < size; i++) {
+    let diff;
+    for (let j = 0; j < size; j++) {
+      if (i != j) {
+        diff = Math.abs(arr[i] - arr[j]);
+        if (diff == k) {
+          return "Yes";
+        }
+      }
+    }
+  }
+  return "No";
 }

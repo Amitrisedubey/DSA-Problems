@@ -12,4 +12,25 @@ let matrix = [
 console.log(spiralTraversal_V(matrix, size));
 function spiralTraversal_V(matrix, size) {
   //Write code here
+  let left = 0;
+  let right = size - 1;
+  let top = 0;
+  let bottom = size - 1;
+  let res = "";
+  for (let i = top; i <= bottom; i++) {
+    res += matrix[i][right] + " ";
+  }
+  right--;
+  for (let i = right; i >= left; i--) {
+    res += matrix[bottom][i] + " ";
+  }
+  bottom--;
+  for (let i = bottom; i >= top; i--) {
+    res += matrix[i][left] + " ";
+  }
+  left++;
+  for (let i = left; i <= right; i++) {
+    res += matrix[top][i] + " ";
+  }
+  return res;
 }

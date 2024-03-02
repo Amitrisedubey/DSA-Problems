@@ -13,4 +13,11 @@ let array = [10, 9, 8, 7, 7, 7, 5, 5];
 console.log(whoIsGoingForward(array, size, k));
 function whoIsGoingForward(array, size, k) {
   //Write code here
+  let count = 0;
+  for (let i = 0; i < size; i++) {
+    if (array[i] > k) {
+      count++;
+    }
+  }
+  return count;
 }
