@@ -14,3 +14,5 @@ function BubbleSorting(arr, n) {
   }
   return arr;
 }
+// Time Complexity = O(N2)
+// Space Complexity = O(1)
